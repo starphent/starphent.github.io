@@ -7,8 +7,8 @@
     <style>
         body {
             background-color: #000000;
-            padding-top: 100px;
-            padding-bottom: 100px;
+            padding-top: 32px;
+            padding-bottom: 32px;
         }
 
         h1 {
@@ -37,13 +37,6 @@
             gap: 20px;
         }
 
-        .primarybuttons {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 0;
-            gap: 20px;
-        }
-
         .prioritylinks a {
             transition: transform 0.3s ease;
         }
@@ -53,16 +46,18 @@
         }
 
         .linkbox {
+            display: flex;
             background-color: #d09500;
+            padding: 30px 1px;
             border-radius: 20px;
-            min-width: 140px;
-            min-height: 140px;
+            max-width: 600px;
             width: 90%;
             text-align: center;
             border: 2px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
             align-items: center;
             margin: 1px auto 20px;
+            justify-content: space-between;
             transition: all 0.3s ease;
         }
 
@@ -74,16 +69,10 @@
 
         .linkbox h2 {
             font-family: "Shantell Sans", cursive;
-            font-size: 20px;
-            margin-top: 10px;
-            justify-content: flex-start;
+            font-size: 25px;
             text-align: center;
             margin-bottom: 0;
-            vertical-align: middle;
-        }
-        .linkbox img {
-            font-size: 20px;
-            margin-top: 10px;
+            margin-top: 0;
             vertical-align: middle;
         }
         p {
@@ -94,7 +83,10 @@
             margin-top: 0;
             margin-bottom: 5px;
         }
-
+        .linkbox img {
+            margin-right: -60px;
+            margin-left: 10px;
+        }
         .element {
             position: absolute;
             bottom: 0;
@@ -115,11 +107,24 @@
     </div>
     <h1>Starphent</h1>
     <p>Game Designer, Artist, 3D Modeler, Streamer</p>
+    <div class="prioritylinks">
+        <a href="">
+            <img src="Images/Icons/patreon.png" height="50" width="50" />
+        </a>
+        <a href="https://subscribestar.art/starphent">
+            <img src="Images/Icons/SubscribeStar.png" height="50" width="50" />
+        </a>
+        <a href="https://fansly.com/Starphent/posts">
+            <img src="Images/Icons/fansly.png" height="50" width="50" />
+        </a>
+        <a href="https://throne.com/starphent">
+            <img src="Images/Icons/throne.png" height="50" width="50" />
+        </a>
+    </div>
 
-    <div class="primarybuttons">
     <a href="AboutMe.html" class="linkbox-link" style="text-decoration: none; color: inherit;">
         <div class="linkbox">
-            <img src="Images/Icons/Starphent.png" height="90" width="90" style = "margin-left: auto;" /><br>
+            <img src="Images/Icons/Starphent.png" height="50" width="50"/>
             <h2>About Me</h2>
             <p></p>
         </div>
@@ -127,7 +132,7 @@
 
     <a href="https://x.com/Starphent" class="linkbox-link" style="text-decoration: none; color: inherit;">
         <div class="linkbox">
-            <img src="Images/Icons/Twitter.png" height="90" width="90"/>
+            <img src="Images/Icons/Twitter.png" height="50" width="50"/>
             <h2>Twitter</h2>
             <p></p>
         </div>
@@ -135,7 +140,7 @@
 
     <a href="https://bsky.app/profile/starphent.bsky.social" class="linkbox-link" style="text-decoration: none; color: inherit;">
         <div class="linkbox">
-            <img src="Images/Icons/Bluesky.png" height="90" width="90"/>
+            <img src="Images/Icons/Bluesky.png" height="50" width="50"/>
             <h2>Bluesky</h2>
             <p></p>
         </div>
@@ -143,46 +148,44 @@
 
     <a href="https://www.youtube.com/@Starphent" class="linkbox-link" style="text-decoration: none; color: inherit;">
         <div class="linkbox">
-            <img src="Images/Icons/youtube.png" height="90" width="90"/>
+            <img src="Images/Icons/youtube.png" height="50" width="50"/>
             <h2>Youtube</h2>
             <p></p>
         </div>
     </a>
-    </div>
-    <div class="primarybuttons">
+
     <a href="https://www.twitch.tv/starphent" class="linkbox-link" style="text-decoration: none; color: inherit;">
         <div class="linkbox">
-            <img src="Images/Icons/twitch.png" height="90" width="90"/>
+            <img src="Images/Icons/twitch.png" height="50" width="50"/>
             <h2>Twitch</h2>
             <p></p>
         </div>
     </a>
     <a href="https://throne.com/starphent" class="linkbox-link" style="text-decoration: none; color: inherit;">
         <div class="linkbox">
-            <img src="Images/Icons/throne.png" height="90" width="90"/>
+            <img src="Images/Icons/throne.png" height="50" width="50"/>
             <h2>Throne</h2>
             <p></p>
         </div>
     </a>
     <a href="https://www.twitch.tv/starphent" class="linkbox-link" style="text-decoration: none; color: inherit;">
         <div class="linkbox">
-            <img src="Images/Icons/fansly.png" height="90" width="90"/>
+            <img src="Images/Icons/fansly.png" height="50" width="50"/>
             <h2>Fansly</h2>
             <p></p>
         </div>
     </a>
     <a href="https://rplay.live/creatorhome/6a7e8034fc30b764c432239c?page=contents" class="linkbox-link" style="text-decoration: none; color: inherit;">
         <div class="linkbox">
-            <img src="Images/Icons/Rplay.png" height="90" width="90"/>
+            <img src="Images/Icons/Rplay.png" height="50" width="50"/>
             <h2>Rplay</h2>
             <p></p>
         </div>
     </a>
-    </div>
-    <div class="primarybuttons">
+
     <a href="https://subscribestar.art/starphent" class="linkbox-link" style="text-decoration: none; color: inherit;">
         <div class="linkbox">
-            <img src="Images/Icons/SubscribeStar.png" height="90" width="90"/>
+            <img src="Images/Icons/SubscribeStar.png" height="50" width="50"/>
             <h2>SubscribeStar</h2>
             <p></p>
         </div>
@@ -190,13 +193,14 @@
 
     <a href="" class="linkbox-link" style="text-decoration: none; color: inherit;">
         <div class="linkbox">
-            <img src="Images/Icons/patreon.png" height="90" width="90"/>
+            <img src="Images/Icons/patreon.png" height="50" width="50"/>
             <h2>Patreon</h2>
             <p></p>
         </div>
     </a>
+
 </div>
-</div>
+
 <div style="display: flex; justify-content: flex-end;">
     <a href="AOD/Emergency.html" style="position: relative; right: -5px; bottom: -109px;">
         <div class="element"><img src="Images/Misc/Depths.png" height="32" width="32"/></div>
