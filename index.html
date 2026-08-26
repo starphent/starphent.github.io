@@ -101,6 +101,10 @@
                 /* Or use: transform: scale(1.2); transform-origin: top left; */
             }
         }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
     </style>
 </head>
 <body>
@@ -193,7 +197,7 @@
 </div>
 </div>
 <div style="display: flex; justify-content: flex-end;">
-    <a href="AOD/Emergency.html" style="position: relative; right: -5px; bottom: -109px;">
+    <a href="AOD/Emergency.html" style="position: relative; right: -5px; bottom: -109px; animation: fadeIn 10s ease-in forwards">
         <div class="element"><img src="Images/Misc/Depths.png" height="32" width="32"/></div>
     </a>
 </div>
