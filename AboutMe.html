@@ -5,9 +5,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <style>
+        html {
+            height: 100%; /* THIS is required for % to work on body */
+        }
+
         body {
             background-color: #000000;
-            padding-top: 32px;
+            display: flex;
+            flex-direction: column;
         }
 
         h1 {
@@ -17,22 +22,13 @@
             text-align: center;
             margin-bottom: 50px;
         }
-
         .box {
             background-color: #2e0060;
             padding: 40px 50px;
             max-width: 1000px;
-            width: 90%;
             text-align: center;
-            margin: 1px auto 0;
+            margin: 32px auto 40px;
             border: 4px solid rgba(0, 0, 0, 0.2);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-        }
-        .prioritylinks {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-            gap: 20px;
         }
 
         .prioritylinks a {
@@ -48,7 +44,6 @@
             background-color: #d09500;
             padding: 30px 1px;
             max-width: 900px;
-            width: 90%;
             text-align: center;
             border: 4px solid rgba(0, 0, 0, 0.2);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -86,22 +81,16 @@
             margin-right: -60px;
             margin-left: 10px;
         }
-        .element {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
 
-        .linkbox2:hover {
+        .backbutton:hover {
             transform: scale(1.1);
         }
 
-        .linkbox2 {
+        .backbutton {
             display: flex;
             background-color: #d09500;
             padding: 10px 1px;
             max-width: 100px;
-            width: 90%;
             text-align: center;
             border: 4px solid rgba(0, 0, 0, 0.2);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -111,7 +100,7 @@
             transition: all 0.3s ease;
         }
 
-        .linkbox2 h2 {
+        .backbutton h2 {
             font-family: "Shantell Sans", cursive;
             font-size: 25px;
             text-align: center;
@@ -121,13 +110,14 @@
         }
 
         @media screen and (max-width: 1000px) {
-            .box {
+            body {
                 zoom: 1.3; /* Enlarges the element by 20% */
                 /* Or use: transform: scale(1.2); transform-origin: top left; */
             }
         }
     </style>
 </head>
+<title>About Me</title>
 <body>
 <div class="box">
     <h1>About Me</h1>
@@ -157,7 +147,7 @@
     </a>
 
     <a href="index.html" class="linkbox-link" style="text-decoration: none; color: inherit;">
-        <div class="linkbox2">
+        <div class="backbutton">
             <h2>Back</h2>
             <p></p>
         </div>
