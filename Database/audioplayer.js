@@ -4,6 +4,13 @@ const audio = new Audio('Surroundings.mp3');
 audio.volume = 0.1; // 0.0 to 1.0 — change to whatever volume you want
 audio.loop = true;
 
-audio.play().catch(function (error) {
-    console.log('Autoplay blocked:', error);
+function startMusic() {
+    audio.play();
+    document.removeEventListener('click', startMusic);
+    document.removeEventListener('keydown', startMusic);
+}
+
+audio.play().catch(function () {
+    document.addEventListener('click', startMusic);
+    document.addEventListener('keydown', startMusic);
 });
